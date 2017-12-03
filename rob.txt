@@ -1,0 +1,101 @@
+2017-12-02T16:16:40.222888+00:00 app[web.1]:     at emitErrorNT (internal/streams/destroy.js:64:8)
+2017-12-02T16:16:40.222881+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+2017-12-02T16:16:40.222886+00:00 app[web.1]:     at Object.onceWrapper (events.js:315:30)
+2017-12-02T16:16:40.222883+00:00 app[web.1]:     at Pool.emit (events.js:211:7)
+2017-12-02T16:16:40.231029+00:00 app[web.1]: npm ERR! errno 1
+2017-12-02T16:16:40.222884+00:00 app[web.1]:     at emitTwo (events.js:126:13)
+2017-12-02T16:16:40.232007+00:00 app[web.1]: npm ERR! todo-api@1.0.0 start: `node server/server.js`
+2017-12-02T16:16:40.232082+00:00 app[web.1]: npm ERR! Exit status 1
+2017-12-02T16:16:40.230770+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-12-02T16:16:40.222887+00:00 app[web.1]:     at emitOne (events.js:116:13)
+2017-12-02T16:16:40.222890+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:180:9)
+2017-12-02T16:16:40.232339+00:00 app[web.1]: npm ERR! Failed at the todo-api@1.0.0 start script.
+2017-12-02T16:16:40.232234+00:00 app[web.1]: npm ERR! 
+2017-12-02T16:16:40.232441+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2017-12-02T16:16:40.238184+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2017-12-02T16:16:40.238262+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2017-12-02T16_16_40_233Z-debug.log
+2017-12-02T16:16:40.238044+00:00 app[web.1]: 
+2017-12-02T16:16:40.280428+00:00 heroku[web.1]: Process exited with status 1
+2017-12-02T16:16:40.295728+00:00 heroku[web.1]: State changed from starting to crashed
+2017-12-02T16:25:23.000000+00:00 app[api]: Build started by user robertrivest.svnp@gmail.com
+2017-12-02T16:25:32.056220+00:00 app[api]: Deploy b3c69bb6 by user robertrivest.svnp@gmail.com
+2017-12-02T16:25:32.056220+00:00 app[api]: Release v5 created by user robertrivest.svnp@gmail.com
+2017-12-02T16:25:32.522188+00:00 heroku[web.1]: State changed from crashed to starting
+2017-12-02T16:25:23.000000+00:00 app[api]: Build succeeded
+2017-12-02T16:25:34.243750+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-12-02T16:25:35.675751+00:00 app[web.1]: 
+2017-12-02T16:25:35.675773+00:00 app[web.1]: > todo-api@1.0.0 start /app
+2017-12-02T16:25:35.675774+00:00 app[web.1]: > node server/server.js
+2017-12-02T16:25:35.675775+00:00 app[web.1]: 
+2017-12-02T16:25:36.124241+00:00 app[web.1]: (node:20) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+2017-12-02T16:25:36.125623+00:00 app[web.1]: Started on Port 13846
+2017-12-02T16:25:36.144118+00:00 app[web.1]: 
+2017-12-02T16:25:36.144120+00:00 app[web.1]: events.js:183
+2017-12-02T16:25:36.144122+00:00 app[web.1]:       throw er; // Unhandled 'error' event
+2017-12-02T16:25:36.144122+00:00 app[web.1]:       ^
+2017-12-02T16:25:36.144553+00:00 app[web.1]: MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: connect ECONNREFUSED 127.0.0.1:27017]
+2017-12-02T16:25:36.144554+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+2017-12-02T16:25:36.144555+00:00 app[web.1]:     at emitOne (events.js:116:13)
+2017-12-02T16:25:36.144555+00:00 app[web.1]:     at Pool.emit (events.js:211:7)
+2017-12-02T16:25:36.144556+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+2017-12-02T16:25:36.144556+00:00 app[web.1]:     at Object.onceWrapper (events.js:317:30)
+2017-12-02T16:25:36.144557+00:00 app[web.1]:     at emitTwo (events.js:126:13)
+2017-12-02T16:25:36.144557+00:00 app[web.1]:     at Connection.emit (events.js:214:7)
+2017-12-02T16:25:36.144557+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:187:49)
+2017-12-02T16:25:36.144558+00:00 app[web.1]:     at Object.onceWrapper (events.js:315:30)
+2017-12-02T16:25:36.144558+00:00 app[web.1]:     at emitOne (events.js:116:13)
+2017-12-02T16:25:36.144559+00:00 app[web.1]:     at Socket.emit (events.js:211:7)
+2017-12-02T16:25:36.144559+00:00 app[web.1]:     at emitErrorNT (internal/streams/destroy.js:64:8)
+2017-12-02T16:25:36.144560+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:138:11)
+2017-12-02T16:25:36.144560+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:180:9)
+2017-12-02T16:25:36.152417+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-12-02T16:25:36.152754+00:00 app[web.1]: npm ERR! errno 1
+2017-12-02T16:25:36.153724+00:00 app[web.1]: npm ERR! todo-api@1.0.0 start: `node server/server.js`
+2017-12-02T16:25:36.153873+00:00 app[web.1]: npm ERR! Exit status 1
+2017-12-02T16:25:36.154072+00:00 app[web.1]: npm ERR! 
+2017-12-02T16:25:36.154220+00:00 app[web.1]: npm ERR! Failed at the todo-api@1.0.0 start script.
+2017-12-02T16:25:36.157834+00:00 app[web.1]: 
+2017-12-02T16:25:36.154356+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2017-12-02T16:25:36.157968+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2017-12-02T16:25:36.158043+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2017-12-02T16_25_36_155Z-debug.log
+2017-12-02T16:25:36.203450+00:00 heroku[web.1]: State changed from starting to crashed
+2017-12-02T16:25:36.205291+00:00 heroku[web.1]: State changed from crashed to starting
+2017-12-02T16:25:36.191094+00:00 heroku[web.1]: Process exited with status 1
+2017-12-02T16:25:38.811556+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-12-02T16:25:42.706766+00:00 app[web.1]: 
+2017-12-02T16:25:42.706792+00:00 app[web.1]: > todo-api@1.0.0 start /app
+2017-12-02T16:25:42.706792+00:00 app[web.1]: > node server/server.js
+2017-12-02T16:25:42.706793+00:00 app[web.1]: 
+2017-12-02T16:25:44.011115+00:00 app[web.1]: (node:20) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+2017-12-02T16:25:44.016576+00:00 app[web.1]: Started on Port 23024
+2017-12-02T16:25:44.061854+00:00 app[web.1]: 
+2017-12-02T16:25:44.061858+00:00 app[web.1]: events.js:183
+2017-12-02T16:25:44.061859+00:00 app[web.1]:       throw er; // Unhandled 'error' event
+2017-12-02T16:25:44.061864+00:00 app[web.1]:       ^
+2017-12-02T16:25:44.062611+00:00 app[web.1]: MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: connect ECONNREFUSED 127.0.0.1:27017]
+2017-12-02T16:25:44.062613+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+2017-12-02T16:25:44.062614+00:00 app[web.1]:     at emitOne (events.js:116:13)
+2017-12-02T16:25:44.062615+00:00 app[web.1]:     at Pool.emit (events.js:211:7)
+2017-12-02T16:25:44.062615+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+2017-12-02T16:25:44.062616+00:00 app[web.1]:     at Object.onceWrapper (events.js:317:30)
+2017-12-02T16:25:44.062616+00:00 app[web.1]:     at emitTwo (events.js:126:13)
+2017-12-02T16:25:44.062617+00:00 app[web.1]:     at Connection.emit (events.js:214:7)
+2017-12-02T16:25:44.062618+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:187:49)
+2017-12-02T16:25:44.062618+00:00 app[web.1]:     at Object.onceWrapper (events.js:315:30)
+2017-12-02T16:25:44.062619+00:00 app[web.1]:     at emitOne (events.js:116:13)
+2017-12-02T16:25:44.062620+00:00 app[web.1]:     at Socket.emit (events.js:211:7)
+2017-12-02T16:25:44.062621+00:00 app[web.1]:     at emitErrorNT (internal/streams/destroy.js:64:8)
+2017-12-02T16:25:44.062621+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:138:11)
+2017-12-02T16:25:44.062622+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:180:9)
+2017-12-02T16:25:44.077223+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-12-02T16:25:44.077648+00:00 app[web.1]: npm ERR! errno 1
+2017-12-02T16:25:44.079593+00:00 app[web.1]: npm ERR! todo-api@1.0.0 start: `node server/server.js`
+2017-12-02T16:25:44.080037+00:00 app[web.1]: npm ERR! 
+2017-12-02T16:25:44.080207+00:00 app[web.1]: npm ERR! Failed at the todo-api@1.0.0 start script.
+2017-12-02T16:25:44.079768+00:00 app[web.1]: npm ERR! Exit status 1
+2017-12-02T16:25:44.087436+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2017-12-02T16:25:44.080366+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2017-12-02T16:25:44.087220+00:00 app[web.1]: 
+2017-12-02T16:25:44.087552+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2017-12-02T16_25_44_082Z-debug.log
+2017-12-02T16:25:44.191053+00:00 heroku[web.1]: Process exited with status 1
+2017-12-02T16:25:44.205648+00:00 heroku[web.1]: State changed from starting to crashed
